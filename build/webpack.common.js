@@ -9,12 +9,22 @@ const config = {
         path : commonPaths.outputPath,
         publicPath : '/'
     },
+    resolve: {
+        extensions: [".ts", ".tsx", ".js"]
+      },
     module : {
         rules : [
             {
-                test : /\.(js)$/,
+                test : /\.tsx?$/,
                 exclude : /node_modules/,
-                use : ['babel-loader']
+                use : [
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                          transpileOnly: true
+                        }
+                      }
+                ]
             }
         ]
     },
