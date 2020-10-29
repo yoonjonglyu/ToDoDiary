@@ -25,7 +25,7 @@
 - index.tsx
 > 웹팩 번들링 시작점. root
 - app.tsx
-> 어플리케이션 시작점. app entry <>  
+> 어플리케이션 시작점. app entry  
 > route나 기타 부분을 분리할 필요가 있으므로 따로 만든다.
 - view
 > 페이지 view 폴더. view dir  
