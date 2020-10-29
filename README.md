@@ -21,6 +21,31 @@
 - src
 > dev root
 
+### SRC STRUCTURE
+- index.tsx
+> 웹팩 번들링 시작점. root
+- app.tsx
+> 어플리케이션 시작점. app entry <>  
+> route나 기타 부분을 분리할 필요가 있으므로 따로 만든다.
+- view
+> 페이지 view 폴더. view dir  
+> route로 나뉘어진 page들에 대한 view.
+- components
+> 공통 컴포넌트 폴더. global components dir  
+> 각 페이지에 종속적이지 않은 제네릭한 컴포넌트들의 집합이다.
+- controllers
+> 각 페이지에 대한 controller 폴더. controllers dir  
+> MVVM에서의 provider의 역할과 ViewController또는 MVP P의 역할을 담당한다.
+- viewModels
+> view Models dir  
+> 비즈니스 로직을 담당하는 부분 데이터 처리에 관련 된 로직을 view models에서 담당한다.
+- models
+> models dir  
+> 데이터 엑세스에 관련된 로직들이나 앱이 기본적으로 가지고 있어야 하는 데이터들을 담당한다.
+- actions, reducers
+> redux dir  
+> action 타입과 그거에 대한 리듀서들을 담당한다. 리듀서는 오직 상태를 관리하는 역할만 담당한다.
+
 ## LICENSE
 - MIT
 
